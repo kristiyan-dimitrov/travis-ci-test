@@ -1,0 +1,18 @@
+
+<! -- Rendering the Form for User Input -->
+
+<form action="{{ url_for('addition') }}" method=post > 
+      <dl>
+          <input type=text size=15 name=x placeholder="X">
+          <input type=text size=15 name=y placeholder="Y">
+          <input type=submit class="btn btn-primary" value=Add>
+      </dl>
+</form>
+
+<! -- Rendering the Result -->
+
+<h3>
+    <div>
+        <p> Result {{ result }} </p>
+    </div>
+</h3>
